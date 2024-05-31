@@ -1,6 +1,7 @@
 // ServiceSelection.jsx
 import React, { useState } from 'react';
 import { services, tasks } from '../../helpers/ServiceDetails';
+import CleaningDetails from '../../helpers/DetailsTrimming';
 
 
 
@@ -22,7 +23,7 @@ const ServiceItem = ({ service, isSelected, onSelect, onDeselect, showDetails, o
                 {showDetails ? (
                     <>
                         <button className="text-blue-500" onClick={() => onToggleDetails(service.name)}>Hide details</button>
-                        <div>{service.detail}</div>
+                        <CleaningDetails details={service.detail || ''}/> 
                     </>
                 ) : null}
             </div>
@@ -98,7 +99,7 @@ const ServiceSelection = () => {
                     onToggleDetails={handleToggleDetails}
                 />
             ))}
-            {error && <ErrorMessage message={error} />}
+            
             <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded">Next</button>
         </div>
     );
