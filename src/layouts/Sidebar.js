@@ -3,13 +3,10 @@ import { useNavigate, useLocation, Link } from 'react-router-dom';
 import axios from 'axios';
 import apiUrl from '../apiConfig';
 
-
-
-import logo from '../img/ibedc.jpg';
 import { mainLinks } from '../helpers/LinkDetails';
 
 
-
+var logo = ""
 const Sidebar = () => {
   const Links = [
     { name: 'HOME', link: '/task' },
@@ -17,37 +14,12 @@ const Sidebar = () => {
     { name: 'CREATE DEPARTMENT', link: '/department/create' },
   ];
 
-  // const [open, setOpen] = useState(true);
-  // const menus = [
-  //   { name: "IBEDC", icon: logo, gap: true },
 
-  //   { name: "Dashboard", icon: MdOutlineDashboard, link: "/" },
-  //   { name: "Customers ", icon: HiUsers, link: "/customers" },
-  //   { name: "Enumeration", icon: TiDocumentText },
-  //   { name: "Meter Reading", icon: MdOutlineGasMeter, gap: true },
-
-  //   { name: "DT Meter Reading", icon: MdOutlineGasMeter },
-  //   { name: "Bill Distribution", icon: MdOutlineDashboard },
-  //   { name: "DSS ", icon: IoDocumentTextOutline, gap: true },
-  //   { name: "CRO Management", icon: ImUsers },
-  //   { name: "CRO Route Map", icon: MdOutlineRoute },
-  //   { name: "Performance ", icon: MdInsights },
-  //   { name: "Evaluation", icon: RxSpeakerModerate },
-  //   { name: "MD Audit", icon: FaPenSquare, gap: true },
-
-  //   { name: "Disconnection", icon: FaCloudBolt },
-  //   { name: "Reconnection", icon: TbCloudDataConnection },
-  //   { name: "DT Complaint ", icon: RiCustomerService2Fill, gap: true },
-  //   { name: "Customer Engagement", icon: TbUsersGroup },
-  // ];
 
   const [open, setOpen] = useState(false);
   const [currentPath, setCurrentPath] = useState('');
 
 
-
-
-  // const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const location = useLocation();

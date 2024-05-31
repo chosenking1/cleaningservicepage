@@ -10,7 +10,6 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { TbLogout2 } from "react-icons/tb";
 import { IoNotificationsOutline } from "react-icons/io5";
 
-import Image from "../img/user.jpg";
 import { allLinks } from '../helpers/LinkDetails';
 
 

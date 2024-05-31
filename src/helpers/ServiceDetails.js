@@ -1,18 +1,3 @@
-import { MdOutlineDashboard } from "react-icons/md";
-import { MdOutlineGasMeter } from "react-icons/md";
-import { TiDocumentText } from "react-icons/ti";
-import { IoDocumentTextOutline } from "react-icons/io5";
-import { ImUsers } from "react-icons/im";
-import { MdOutlineRoute } from "react-icons/md";
-import { MdInsights } from "react-icons/md";
-import { RxSpeakerModerate } from "react-icons/rx";
-import { FaPenSquare } from "react-icons/fa";
-import { FaCloudBolt } from "react-icons/fa6";
-import { TbCloudDataConnection } from "react-icons/tb";
-import { RiCustomerService2Fill } from "react-icons/ri";
-import { TbUsersGroup } from "react-icons/tb";
-import { HiUsers } from "react-icons/hi2";
-import logo from '../img/ibedc.jpg';
 
 export const services= [
     { 
